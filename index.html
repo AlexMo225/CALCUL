@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content>
+        <title>Calculatrice Simple</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <script src="js/calc.js" defer></script>
+    </head>
+    <body>
+        <h1>MA PETITE CALCULETTE</h1>
+        <form id="calculatorForm">
+            <input type="number" id="number1" step="any" required placeholder="Nombre 1">
+
+            <select id="operation" required>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+            <input type="number" id="number2" step="any" required placeholder="Nombre 2">
+
+
+            <input type="submit" value="Calculer">
+            <a href="#" id="resetButton">Réinitialiser</a>
+        </form>
+        <div id="results"></div>
+        <div class="error" style="color: red;"></div>
+    </body>
+</html>
